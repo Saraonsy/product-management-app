@@ -1,0 +1,44 @@
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="w-75 mx-auto py-3">
+        <h2 py>Product Management System</h2>
+
+        <label for="productNameInput">Product Name :</label>
+        <input type="text" id="productNameInput" class="form-control mb-2">
+
+        <label for="productPriceInput">Product Price :</label>
+        <input type="text" id="productPriceInput" class="form-control mb-2">
+
+        <label for="productCtagoryInput">Product Catogory :</label>
+        <input type="text" id="productCtagoryInput" class="form-control mb-2">
+
+        <label for="productDescInput">Product Desc :</label>
+        <textarea type="text" id="productDescInput" class="form-control mb-2"></textarea>
+
+        <button class="btn btn-outline-info" onclick="AddProduct();">Add Product</button>
+
+    </div>
+    <table  class="table w-75 m-auto">
+        <thead>
+            <th>index</th>
+            <th>ProductName</th>
+            <th>ProductPrice</th>
+            <th>ProductCatogry</th>
+            <th>ProductDesc</th>
+            <th>update</th>
+            <th>delete</th>
+        </thead>
+        <tbody id='tableBody'>
+            
+        </tbody>
+
+    </table>
+        
+    
+    
+
+    <script src="main.js"></script>
+</body>
