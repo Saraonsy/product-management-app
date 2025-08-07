@@ -6,6 +6,8 @@
     <div class="w-75 mx-auto py-3">
         <h2 py>Product Management System</h2>
 
+
+
         <label for="productNameInput">Product Name :</label>
         <input type="text" id="productNameInput" class="form-control mb-2">
 
@@ -19,6 +21,11 @@
         <textarea type="text" id="productDescInput" class="form-control mb-2"></textarea>
 
         <button class="btn btn-outline-info" onclick="AddProduct();">Add Product</button>
+
+    </div>
+    <div class="w-75 mx-auto p-4" >
+        <label for="">Search:</label>
+        <input type="text" class="form-control" placeholder="Search by name" id="search" oninput="searchProducts(this.value)">
 
     </div>
     <table  class="table w-75 m-auto">
@@ -36,10 +43,10 @@
         </tbody>
 
     </table>
+
         
     
     
 
     <script src="main.js"></script>
-
 </body>
